@@ -1,0 +1,12 @@
+scheme,candidate_pairs,candidates_pct_of_space,true_matches_kept,pairs_completeness,recall_ceiling,reduction_ratio,pair_quality,matches_lost
+exact on venue,0,0.0,0,0.0,0.0,1.0,0.0,2224
+exact on authors,1434,0.0239,630,0.2833,0.2833,0.999761,0.439331,1594
+exact on title,2287,0.0381,2027,0.9114,0.9114,0.999619,0.886314,197
+tfidf title top-1,2616,0.0436,2172,0.9766,0.9766,0.999564,0.830275,52
+tfidf title top-5,13080,0.218,2214,0.9955,0.9955,0.99782,0.169266,10
+tfidf title top-10,26160,0.4359,2223,0.9996,0.9996,0.995641,0.084977,1
+tfidf title top-20,52320,0.8718,2224,1.0,1.0,0.991282,0.042508,0
+tfidf title top-50,130800,2.1796,2224,1.0,1.0,0.978204,0.017003,0
+exact on year,601284,10.0196,2224,1.0,1.0,0.899804,0.003699,0
+shared title token,1692769,28.2076,2224,1.0,1.0,0.717924,0.001314,0
+full cartesian,6001104,100.0,2224,1.0,1.0,0.0,0.000371,0

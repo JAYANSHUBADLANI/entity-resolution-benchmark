@@ -1,0 +1,5 @@
+dataset,feature set,n_features,precision,recall,f1,em_iterations
+DBLP-ACM,all features,17,0.6193,0.9991,0.7646,27
+DBLP-ACM,one per field,4,0.8196,0.9991,0.9005,30
+Amazon-GoogleProducts,all features,17,0.3118,0.797,0.4483,35
+Amazon-GoogleProducts,one per field,4,0.3343,0.7496,0.4624,200

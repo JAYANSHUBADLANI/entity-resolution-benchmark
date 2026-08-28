@@ -1,0 +1,31 @@
+# Every tunable lives here. Nothing in this file is a magic number chosen after seeing results,
+# each value is either a source fact or a stated design choice.
+
+datasets:
+  dblp_acm:
+    label: "DBLP-ACM"
+    character: structured
+    url: "https://dbs.uni-leipzig.de/file/DBLP-ACM.zip"
+    left_file: "DBLP2.csv"
+    right_file: "ACM.csv"
+    mapping_file: "DBLP-ACM_perfectMapping.csv"
+    left_id: "idDBLP"
+    right_id: "idACM"
+    encoding: "latin-1"
+    compare_fields: [title, authors, venue, year]
+  amazon_google:
+    label: "Amazon-GoogleProducts"
+    character: dirty
+    url: "https://dbs.uni-leipzig.de/file/Amazon-GoogleProducts.zip"
+    left_file: "Amazon.csv"
+    right_file: "GoogleProducts.csv"
+    mapping_file: "Amzon_GoogleProducts_perfectMapping.csv"
+    left_id: "idAmazon"
+    right_id: "idGoogleBase"
+    encoding: "latin-1"
+    # GoogleProducts calls the product name "name" where Amazon calls it "title".
+    # The rename is applied at load time so the rest of the pipeline sees one schema.
+    rename_right: {name: title}
+    compare_fields: [title, description, manufacturer, price]
+
+random_seed: 42

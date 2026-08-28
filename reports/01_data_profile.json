@@ -1,0 +1,38 @@
+{
+  "dblp_acm": {
+    "left_records": 2616,
+    "right_records": 2294,
+    "duplicate_left_ids": 0,
+    "duplicate_right_ids": 0,
+    "labelled_matches": 2224,
+    "duplicate_label_rows": 0,
+    "labels_pointing_at_missing_left_id": 0,
+    "labels_pointing_at_missing_right_id": 0,
+    "pair_space": 6001104,
+    "match_rate_pct": 0.03706,
+    "one_pair_per_2700": 2698,
+    "left_max_matches": 1,
+    "right_max_matches": 1,
+    "left_records_with_multiple_matches": 0,
+    "right_records_with_multiple_matches": 0,
+    "is_strictly_one_to_one": true
+  },
+  "amazon_google": {
+    "left_records": 1363,
+    "right_records": 3226,
+    "duplicate_left_ids": 0,
+    "duplicate_right_ids": 0,
+    "labelled_matches": 1300,
+    "duplicate_label_rows": 0,
+    "labels_pointing_at_missing_left_id": 0,
+    "labels_pointing_at_missing_right_id": 0,
+    "pair_space": 4397038,
+    "match_rate_pct": 0.02957,
+    "one_pair_per_2700": 3382,
+    "left_max_matches": 5,
+    "right_max_matches": 2,
+    "left_records_with_multiple_matches": 144,
+    "right_records_with_multiple_matches": 9,
+    "is_strictly_one_to_one": false
+  }
+}

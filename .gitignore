@@ -1,0 +1,8 @@
+data/raw/
+data/interim/
+*.pyc
+__pycache__/
+.pytest_cache/
+.venv/
+.DS_Store
+artifacts/*.parquet

@@ -1,0 +1,9 @@
+dataset,matcher,entity level (by record),pair level (random),inflation_pp
+Amazon-GoogleProducts,fellegi-sunter (unsupervised),0.4484,0.448,-0.04
+Amazon-GoogleProducts,gradient boosting,0.5811,0.584,0.29
+Amazon-GoogleProducts,logistic regression,0.435,0.4349,-0.01
+Amazon-GoogleProducts,threshold rule,0.5221,0.5215,-0.06
+DBLP-ACM,fellegi-sunter (unsupervised),0.7643,0.7646,0.03
+DBLP-ACM,gradient boosting,0.986,0.9876,0.16
+DBLP-ACM,logistic regression,0.9703,0.9692,-0.11
+DBLP-ACM,threshold rule,0.9235,0.9235,0.0

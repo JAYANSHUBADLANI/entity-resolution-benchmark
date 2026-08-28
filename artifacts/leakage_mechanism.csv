@@ -1,0 +1,5 @@
+dataset,features,entity level (by record),pair level (random),inflation_pp
+Amazon-GoogleProducts,similarity only,0.5811,0.584,0.29
+Amazon-GoogleProducts,with record identity feature,0.5919,0.2066,-38.53
+DBLP-ACM,similarity only,0.986,0.9876,0.16
+DBLP-ACM,with record identity feature,0.9857,0.4051,-58.06
