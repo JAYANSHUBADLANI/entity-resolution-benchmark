@@ -68,18 +68,20 @@ the 200 iteration cap without converging, which is reported as it stands rather 
 
 ## Pending
 
-- Cardinality: Amazon-Google is many to many and nothing currently enforces or exploits that.
-  A constrained assignment step should raise precision, and must not be applied to both datasets
-  identically.
-- Threshold selection on a validation fold with precision-recall curves, rather than the 0.5
-  default currently used by the supervised matchers.
-- Error analysis on Amazon-Google: what the 0.58 F1 is actually failing on.
-- Comparison against the published Magellan and DeepMatcher figures for these two benchmarks,
-  with citations.
-- Test suite, Makefile entry point, README.
-- Deterministic rerun check, two consecutive runs byte identical.
+Nothing in the build is outstanding. Every phase runs from `make demo` in about two and a half
+minutes, `make test` passes 17 tests with no network, and `make determinism` confirms two
+consecutive runs produce byte identical artifacts.
+
+Remaining work is mine, not the pipeline's:
+
+- Push to GitHub. Not done from the build session by design.
+- Optional: a third, harder benchmark (Walmart-Amazon or Abt-Buy) would test whether the
+  conclusions here are about the method or about these two datasets. The loader is already
+  config driven, so adding one is a config entry plus a download.
+- Optional: a transformer baseline on the dirty dataset, purely to see how much of the gap to the
+  published deep result is method and how much is candidate set.
 
 ## Decisions for me
 
-- Whether to add a third, harder benchmark (Walmart-Amazon or Abt-Buy) or keep the two.
+- Whether to add the third benchmark before pushing, or push as is.
 - Repo name is currently `entity-resolution-benchmark`.

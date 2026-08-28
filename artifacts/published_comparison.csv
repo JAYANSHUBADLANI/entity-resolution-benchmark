@@ -1,0 +1,3 @@
+dataset,"this project, best rule",this project F1,candidate pairs here,positive rate here %,published Magellan F1,published best DL F1,published pairs,published positive rate %
+DBLP-ACM,tuned cut + degree cap (fitted per fold),0.99,52320,4.3,0.9840000000000001,0.9840000000000001,12363,18.0
+Amazon-GoogleProducts,tuned cut + strict 1:1 (greedy),0.615,27260,4.7,0.491,0.693,11460,10.2

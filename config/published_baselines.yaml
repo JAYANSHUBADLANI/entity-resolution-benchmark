@@ -1,0 +1,51 @@
+# Published figures, transcribed from the primary source rather than from a secondary summary.
+#
+# Source: Sidharth Mudgal, Han Li, Theodoros Rekatsinas, AnHai Doan, Youngchoon Park,
+# Ganesh Krishnan, Rohit Deep, Esteban Arcaute, Vijay Raghavendra.
+# "Deep Learning for Entity Matching: A Design Space Exploration." SIGMOD 2018.
+# Table 3 (results for structured data) and Table 2 (dataset sizes).
+# PDF: https://pages.cs.wisc.edu/~anhai/papers1/deepmatcher-sigmod18.pdf
+# Transcribed 2026-08-28.
+#
+# Read the comparability block before quoting any of this next to a number from this project.
+
+source:
+  citation: "Mudgal et al., Deep Learning for Entity Matching: A Design Space Exploration, SIGMOD 2018"
+  url: "https://pages.cs.wisc.edu/~anhai/papers1/deepmatcher-sigmod18.pdf"
+  tables: "Table 2 (datasets), Table 3 (structured results)"
+  transcribed: "2026-08-28"
+
+comparability:
+  protocol: "Labelled candidate pairs split 3:1:1 into train, validation and evaluation."
+  why_not_like_for_like: >
+    The published numbers are measured on a supplied set of labelled candidate pairs, not on the
+    full pair space. Blocking is therefore outside their measurement and inside this project's.
+    Their candidate sets are also far better balanced, which makes precision easier: 18.0 percent
+    of their DBLP-ACM pairs are matches and 10.2 percent of their Amazon-Google pairs, against
+    4.3 and 4.7 percent in the candidate sets used here. Their Amazon-Google set contains 1,167
+    positives where the published ground truth for the dataset has 1,300, so their recall
+    denominator is not the full ground truth either.
+
+results:
+  dblp_acm:
+    published_label: "DBLP-ACM1 (structured)"
+    labelled_pairs: 12363
+    positives: 2220
+    positive_rate_pct: 18.0
+    f1:
+      SIF: 97.5
+      RNN: 98.3
+      Attention: 98.4
+      Hybrid: 98.4
+      Magellan: 98.4
+  amazon_google:
+    published_label: "Amazon-Google (structured)"
+    labelled_pairs: 11460
+    positives: 1167
+    positive_rate_pct: 10.2
+    f1:
+      SIF: 60.6
+      RNN: 59.9
+      Attention: 61.1
+      Hybrid: 69.3
+      Magellan: 49.1
