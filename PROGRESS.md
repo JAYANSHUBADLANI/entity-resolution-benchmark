@@ -72,9 +72,8 @@ Nothing in the build is outstanding. Every phase runs from `make demo` in about 
 minutes, `make test` passes 17 tests with no network, and `make determinism` confirms two
 consecutive runs produce byte identical artifacts.
 
-Remaining work is mine, not the pipeline's:
+Remaining work:
 
-- Push to GitHub. Not done from the build session by design.
 - Optional: a third, harder benchmark (Walmart-Amazon or Abt-Buy) would test whether the
   conclusions here are about the method or about these two datasets. The loader is already
   config driven, so adding one is a config entry plus a download.
