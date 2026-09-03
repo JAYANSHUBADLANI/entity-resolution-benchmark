@@ -1,5 +1,7 @@
 # Entity resolution on two benchmarks
 
+[![tests](https://github.com/JAYANSHUBADLANI/entity-resolution-benchmark/actions/workflows/pytest.yml/badge.svg)](https://github.com/JAYANSHUBADLANI/entity-resolution-benchmark/actions/workflows/pytest.yml)
+
 Deciding which records in two different catalogues describe the same real thing, on two datasets
 chosen because they fail in different ways: a clean bibliographic pair where the hard part is
 volume, and a dirty product pair where the hard part is that the same item is written up two
